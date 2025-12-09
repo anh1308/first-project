@@ -1,0 +1,556 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+header {
+    padding: 15px 0;
+    background: rgb(250, 252, 252);
+    border-bottom: 1px solid #0e0d0d;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-btn {
+    border: 1px solid #0c0c0c;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 75px;
+    object-fit: contain;
+}
+
+.main-nav {
+    font-size: 20px;
+    flex: 1;
+    margin: 0 40px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 25px;
+    font-weight: 500;
+}
+
+.nav-list li a:hover {
+    color: rgb(237, 116, 184);
+}
+
+.nav-list li i {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.header-right:hover {
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #8b572a;
+    color: #fff;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anhbia {
+    width: 100%;
+    overflow: hidden;
+}
+
+.anhbia img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.spnoibat {
+    text-align: center;
+    color: rgb(15, 15, 15);
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.sanpham-list {
+    display: grid;
+    margin: 20px 0 0 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.sanpham {
+    width: 300px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sanpham:hover {
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sanpham img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.footer {
+    margin-top: 30px;
+    background: rgba(205, 15, 15, 0.199);
+    text-align: center;
+    color: rgb(12, 9, 9);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.filter-navbar {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    background-color: #e0e0e0;
+}
+
+.filter-item {
+    font-size: 15px;
+    color: #333;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+.filter-item:hover {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fffbfb;
+}
+
+.filter-menucon {
+    position: relative;
+    display: inline-block;
+}
+
+.menucon {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.menucon a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menucon a:hover {
+    background: #fb0505;
+}
+
+.filter-menucon:hover .menucon {
+    display: block;
+}
+
+.filter-menucon:hover .filter-item {
+    background: #1909ef;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    color: #090300;
+}
+
+.btn:hover {
+    background-color: #4b97dd;
+}
+
+.form-group {
+    text-align: left;
+    width: 50%;
+    margin: 10px;
+}
+
+.imgsao {
+    width: 10px;
+}
+
+.cuoi {
+    text-align: center;
+    background-color: #f18282;
+}
+
+.box {
+    font-size: 25px;
+    margin: 50px;
+    background-color: #f5b2b2;
+}
+
+.gioithieu {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.giohang-title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.giohang-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.giohang-container {
+    width: 1400px;
+    margin: 25px auto;
+    background: rgb(255, 190, 190);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.giohang-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #000000;
+    gap: 20px;
+}
+
+.giohang-item:last-child {
+    border-bottom: none;
+}
+
+.giohang-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.soluong {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.soluong button {
+    width: 28px;
+    height: 28px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.thanhtoan {
+    width: 1400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thanhtoan h3 {
+    text-align: center;
+}
+
+.thanhtoan p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.thanhtoan .tongtien {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkout {
+    padding: 10px 25px;
+    background: #4ee877;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel {
+    padding: 10px 25px;
+    background: #6a6a6a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.xoa {
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.formgiua {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    color: #0066ff;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+}
+
+/* gio hang */
+.giohang-title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.giohang-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.giohang-container {
+    width: 900px;
+    margin: 25px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.giohang-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+}
+
+.giohang-item:last-child {
+    border-bottom: none;
+}
+
+.giohang-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.soluong {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.soluong button {
+    width: 28px;
+    height: 28px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.thanhtoan {
+    width: 350px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thanhtoan h3 {
+    text-align: center;
+}
+
+.thanhtoan p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.thanhtoan .tongtien {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.checkout {
+    padding: 10px 25px;
+    background: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel {
+    padding: 10px 25px;
+    background: #ccc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.timkiem-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-row {
+    margin-top: 15px;
+}
+
+.search-row input {
+    padding: 8px 12px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-tim {
+    padding: 8px 15px;
+    border: none;
+    background: #9fcaeb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-tim:hover {
+    background: #78b6e7;
+}

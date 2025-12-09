@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/adas.css" />
+    <style>
+        /* Center the form box */
+        form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form select,
+        form input[list] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #138bec;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #0f7ad1;
+        }
+
+        /* Optional: style footer */
+        footer.footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #f1f1f1;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <div class="header-left">
+                    <div class="lang-btn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezaN9zncvHKXfe6JkryKqXegI13rBBSCQKQ&s" width="20" alt="Eng" />
+                        Eng / USD ($)
+                    </div>
+                    <div class="logo">
+                        <img src="https://img.icons8.com/dusk/1200/valorant.jpg" alt="Logo" />
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="trangchu.html">Trang chủ</a></li>
+                        <li><a href="sanpham.html">Sản phẩm</a></li>
+                        <li><a href="hotro.html">Hỗ trợ & Đánh giá</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <a href="timkiem.html"><img src="https://media.istockphoto.com/id/1234998829/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-k%C3%ADnh-l%C3%BAp-t%C3%ACm-ki%E1%BA%BFm.jpg?s=612x612&w=0&k=20&c=vSEydjLw6JTPpHMzP4HKPn01G4rSgp_zBAufrI628MY=" alt="" width="25px" /></a>
+                    <a href="user.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/017/800/528/small/user-simple-flat-icon-illustration-vector.jpg" alt="" width="25px" /></a>
+                    <a href="giohang.html">
+                        <div class="cart-icon">
+                            <img src="https://media.istockphoto.com/id/1184670036/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-d%C3%B2ng-gi%E1%BB%8F-h%C3%A0ng-mua-nhanh-logo-vector.jpg?s=612x612&w=0&k=20&c=Zps9UhFubXCpq62OxbEkgJKo7CJQ-irDC5vlQoNoyd8=" alt="" width="25px" />
+                            <span class="cart-badge">3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form>
+        <h2>Thông tin Khách hàng</h2>
+        <label>Họ và tên</label>
+        <input type="text" />
+        <label>Giới tính</label>
+        <input type="radio" name="gender" id="male" /><label for="male" style="display:inline;">Nam</label>
+        <input type="radio" name="gender" id="female" /><label for="female" style="display:inline;">Nữ</label>
+        <label>Số điện thoại</label>
+        <input type="text" />
+        <label>Thành Phố/Tỉnh</label>
+        <input list="country" />
+        <datalist id="country">
+            <option value="TP.Cần Thơ"></option>
+            <option value="TP.Hồ Chí Minh"></option>
+            <option value="TP.Đà Nẵng"></option>
+            <option value="T.An Giang"></option>
+            <option value="T.Long An"></option>
+        </datalist>
+        <label>Phường</label>
+        <select>
+            <option>Chọn Phường</option>
+            <option>Phường A</option>
+            <option>Phường B</option>
+            <option>Phường C</option>
+            <option>Phường D</option>
+        </select>
+        <label>Địa chỉ</label>
+        <input type="text" placeholder="Số nhà, Đường,..." />
+        <label>Liên kết tài khoản ngân hàng</label>
+        <input type="text" placeholder="Số tài khoản" />
+        <button>Đăng ký</button>
+    </form>
+    <footer class="footer">
+        <div>Địa chỉ: 123 Đường ABC, Quận XYZ, Thành phố HCM</div>
+        <div>Số điện thoại: (0123) 456-789 | Email: example@example.com</div>
+        <div>&copy; 2024 Công ty Cổ phần ABC. All rights reserved.</div>
+    </footer>
+</body>
+
+</html>
